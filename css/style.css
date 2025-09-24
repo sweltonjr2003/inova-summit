@@ -212,24 +212,75 @@ footer {
 
 .custom-navbar .navbar-brand {
     color: #ffffff;
-    font-weight: 600;
-    font-size: 3rem;
+    font-weight: 700;
+    font-size: 2.2rem;
     line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+}
+
+.custom-navbar .navbar-brand:hover {
+    color: #06B6D4;
+    text-decoration: none;
+}
+
+.custom-navbar .brand-icon {
+    font-size: 1.8rem;
+    margin-right: 8px;
+    animation: pulse 2s infinite;
+}
+
+.custom-navbar .brand-text {
+    font-weight: 700;
+}
+
+.custom-navbar .brand-year {
+    color: #06B6D4;
+    font-weight: 800;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 .custom-navbar .nav li a {
-    color: #ddd;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     line-height: 40px;
-    transition: all 0.4s ease-in-out;
+    padding: 12px 18px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-navbar .nav li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.custom-navbar .nav li a:hover::before {
+    left: 100%;
 }
 
 .custom-navbar .nav li a:hover {
-    background: transparent;
+    background: rgba(6, 182, 212, 0.1);
     color: #06B6D4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(6, 182, 212, 0.2);
 }
 
 .custom-navbar .navbar-nav > li > a:hover,
@@ -238,8 +289,9 @@ footer {
 }
 
 .custom-navbar .nav li.active > a {
-    background-color: transparent;
+    background: rgba(6, 182, 212, 0.2);
     color: #06B6D4;
+    box-shadow: 0 2px 4px rgba(6, 182, 212, 0.3);
 }
 
 .custom-navbar .navbar-toggle {
@@ -256,15 +308,71 @@ footer {
     border-color: transparent;
 }
 
+/* Navbar CTA Button */
+.custom-navbar .nav-cta {
+    margin-left: 15px;
+}
+
+.custom-navbar .btn-nav-cta {
+    background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+}
+
+.custom-navbar .btn-nav-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s;
+}
+
+.custom-navbar .btn-nav-cta:hover::before {
+    left: 100%;
+}
+
+.custom-navbar .btn-nav-cta:hover {
+    background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(6, 182, 212, 0.4);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.custom-navbar .btn-nav-cta:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 @media(min-width:768px) {
     .custom-navbar {
-        padding: 20px 0;
+        padding: 15px 0;
         border-bottom: 0;
-        background: 0 0; 
+        background: rgba(37, 99, 235, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 2px 20px rgba(37, 99, 235, 0.1);
     }
     .custom-navbar.top-nav-collapse {
-        background: #2563EB;
-        padding: 0;
+        background: rgba(37, 99, 235, 0.98);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        padding: 5px 0;
+        box-shadow: 0 2px 25px rgba(37, 99, 235, 0.2);
     }
 
 }
@@ -877,12 +985,22 @@ footer {
   p {font-size: 13px;}
 
   .custom-navbar .navbar-brand {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .custom-navbar .brand-icon {
+    font-size: 1.5rem;
   }
 
   .custom-navbar .nav li a {
-    font-size: 11px;
+    font-size: 12px;
 	line-height: 20px;
+    padding: 10px 15px;
+  }
+
+  .custom-navbar .btn-nav-cta {
+    padding: 8px 16px;
+    font-size: 11px;
   }
 
   #intro { height: 65vh; }
@@ -897,7 +1015,7 @@ footer {
     padding: 2.5rem 2rem 2.5rem 2rem;
     border-radius: 15px;
     margin-top: 40px;
-  }
+}
 
 }
 
@@ -905,6 +1023,22 @@ footer {
 
   .custom-navbar .navbar-brand {
     line-height: 20px;
+    font-size: 1.6rem;
+  }
+
+  .custom-navbar .brand-icon {
+    font-size: 1.3rem;
+  }
+
+  .custom-navbar .nav-cta {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .custom-navbar .btn-nav-cta {
+    display: block;
+    text-align: center;
+    margin: 10px 15px;
   }
 
   #overview img,
