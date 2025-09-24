@@ -1,0 +1,1038 @@
+/*
+
+New Event
+
+http://www.templatemo.com/tm-486-new-event
+
+*/
+
+body {
+		background: #F3F4F6;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+		font-weight: 400;
+}
+
+
+/*---------------------------------------
+    Typorgraphy              
+-----------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+}
+
+h3,h5 {
+  font-weight: 500;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+h3 {
+  line-height: 36px;
+}
+
+h5 {
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+p {
+    color: #1F2937;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+
+
+/*---------------------------------------
+    General               
+-----------------------------------------*/
+.section-title {
+  margin-bottom: 32px;
+}
+
+#overview,
+#register {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+
+#detail, #video,
+#speakers, 
+#program,
+#sponsors, 
+#contact, footer {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+#detail,
+#speakers, #sponsors,
+footer {
+  text-align: center;
+}
+
+#overview h3,
+#detail h3, #video h3,
+#register h3,
+#venue h3,
+#contact h3 {
+    padding-bottom: 12px;
+}
+
+#intro .btn,
+#contact .btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 18px 35px;
+    margin-top: 42px;
+    margin-right: 15px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+#intro .btn-danger,
+#contact .btn-danger {
+    background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+    border-color: transparent;
+    box-shadow: 0 6px 20px rgba(6, 182, 212, 0.3);
+}
+
+#contact .btn {
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#intro .btn-danger:hover {
+  background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+  border-color: transparent;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+}
+
+#contact .btn-danger:hover {
+  background: #7C3AED;
+}
+
+#intro .btn-default:hover {
+    background: rgba(255, 255, 255, 0.95);
+    color: #1F2937;
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+
+
+/*---------------------------------------
+    Preloader section              
+-----------------------------------------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #F3F4F6;
+}
+
+.sk-rotating-plane {
+  width: 50px;
+  height: 50px;
+  background-color: #2563EB;
+  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+          animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+@-webkit-keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+@keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+
+
+/*---------------------------------------
+    Navigation Links section              
+-----------------------------------------*/
+.custom-navbar {
+    margin-bottom: 0;
+    background-color: #2563EB;
+}
+
+.custom-navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 40px;
+}
+
+.custom-navbar .nav li a {
+    color: #ddd;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    line-height: 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+.custom-navbar .nav li a:hover {
+    background: transparent;
+    color: #06B6D4;
+}
+
+.custom-navbar .navbar-nav > li > a:hover,
+.custom-navbar .navbar-nav > li > a:focus {
+  background-color: transparent;
+}
+
+.custom-navbar .nav li.active > a {
+    background-color: transparent;
+    color: #06B6D4;
+}
+
+.custom-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+}
+
+.custom-navbar .navbar-toggle {
+    background-color: transparent;
+}
+
+.custom-navbar .navbar-toggle .icon-bar {
+    background: #ffffff;
+    border-color: transparent;
+}
+
+@media(min-width:768px) {
+    .custom-navbar {
+        padding: 20px 0;
+        border-bottom: 0;
+        background: 0 0; 
+    }
+    .custom-navbar.top-nav-collapse {
+        background: #2563EB;
+        padding: 0;
+    }
+
+}
+
+
+
+/*---------------------------------------
+    Intro section              
+-----------------------------------------*/
+#intro {
+    background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+     -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#intro h3 {
+  letter-spacing: 2px;
+}
+
+
+
+/*---------------------------------------
+   Overview  section              
+-----------------------------------------*/
+#overview img {
+  position: relative;
+  padding-bottom: 32px;
+}
+
+
+
+/*---------------------------------------
+    Detail section              
+-----------------------------------------*/
+#detail {
+    background: #1F2937;
+    color: #ffffff;
+}
+
+#detail .fa {
+  color: #06B6D4;
+  font-size: 48px;
+}
+
+
+
+/*---------------------------------------
+    Video section              
+-----------------------------------------*/
+#video iframe {
+  border: none;
+}
+
+
+
+/*---------------------------------------
+   Speakers section              
+-----------------------------------------*/
+#speakers {
+    background: #ffffff;
+}
+
+#speakers h3 {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+#speakers h6 {
+  color: #1F2937;
+  margin-top: 4px;
+}
+
+#speakers img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#speakers .col-md-3 {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+}
+
+#speakers .speakers-wrapper {
+    background: #ffffff;
+    padding-bottom: 22px;
+}
+
+
+
+/*---------------------------------------
+   Program section              
+-----------------------------------------*/
+#program h4 {
+    color: #1F2937;
+    font-size: 12px;
+}
+
+#program h3 {
+  margin-top: 16px;
+}
+
+#program .program-divider {
+    border: 1px solid #F3F4F6;
+    margin-top: 32px;
+    margin-bottom: 42px;
+}
+
+#program span {
+    padding-right: 12px;
+}
+
+#program img {
+  border-radius: 50%;
+}
+
+.nav-tabs {
+  margin-bottom: 20px;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav-tabs > li > a {
+  color: #1F2937;
+  font-weight: 600;
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: none;
+  border-radius: 0px;
+}
+.nav-tabs > li > a:hover {
+  background-color: transparent;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #7C3AED;
+  cursor: default;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: #999;
+}
+.tab-content {
+  padding-top: 20px;
+}
+
+
+
+/*---------------------------------------
+    Regsiter section              
+-----------------------------------------*/
+#register {
+    background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+
+#register .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+#register .form-control:focus {
+  border-color: #06B6D4;
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+  outline: none;
+}
+
+#register .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+#register select.form-control {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+#register select.form-control option {
+  background: #7C3AED;
+  color: #ffffff;
+}
+
+#register input {
+  height: 55px;
+}
+
+#register select {
+  height: 55px;
+}
+
+#register input[type="submit"],
+.btn-register-cta {
+  background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  height: 60px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.3);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+#register input[type="submit"]:hover,
+.btn-register-cta:hover {
+  background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(6, 182, 212, 0.4);
+  color: #ffffff;
+}
+
+#register input[type="submit"]:active,
+.btn-register-cta:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+}
+
+/* Efeito de brilho no botão */
+#register input[type="submit"]::before,
+.btn-register-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s;
+}
+
+#register input[type="submit"]:hover::before,
+.btn-register-cta:hover::before {
+  left: 100%;
+}
+
+
+
+/*---------------------------------------
+   Faq section              
+-----------------------------------------*/
+#faq {
+  background: #ffffff;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+#faq .panel-group {
+  margin-top: 32px;
+}
+
+#faq .panel-group .panel {
+  margin-bottom: 8px;
+}
+
+#faq .panel-default {
+  border: none;
+}
+
+#faq .panel-default>.panel-heading {
+  background: #f0f0f0;
+  color: #1F2937;
+}
+
+#faq .panel-heading {
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+#faq .panel-default>.panel-heading+.panel-collapse>.panel-body {
+  border-top: none;
+  padding-top: 22px;
+  padding-left: 32px;
+  padding-bottom: 22px;
+}
+
+#faq .panel-heading .panel-title a[data-toggle="collapse"] {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+}
+
+#faq .panel-heading .panel-title a[data-toggle="collapse"]::after {
+  content: "-";
+  display: block;
+  position: absolute;
+  line-height: 1;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#faq .panel-heading .panel-title a[data-toggle="collapse"].collapsed::after {
+  content: "+";
+}
+
+
+
+/*---------------------------------------
+   Venue section              
+-----------------------------------------*/
+#venue {
+    background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: #ffffff;
+}
+
+#venue h2 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+#venue p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#venue strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#venue p {
+  padding-top: 12px;
+  padding-bottom: 18px;
+}
+
+
+
+/*---------------------------------------
+   Sponsors section              
+-----------------------------------------*/
+#sponsors img {
+  margin-top: 18px;
+}
+
+
+
+/*---------------------------------------
+   Contact section              
+-----------------------------------------*/
+#contact {
+    background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+
+#contact .contact_des {
+    color: #ffffff;
+}
+
+#contact .contact_des h3 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+#contact .contact_des p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#contact .contact_des {
+  padding-top: 3rem;
+  padding-right: 2rem;
+}
+
+#contact .contact_detail {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 3rem 3rem 3rem 3rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+#contact .contact_detail h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#contact .contact_detail p {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+#contact .contact_detail strong {
+  color: #06B6D4;
+  font-weight: 700;
+}
+
+#contact .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: none;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#contact .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#contact textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#contact .form-control:focus {
+  border-color: #06B6D4;
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.2);
+  background: rgba(255, 255, 255, 0.15);
+  outline: none;
+}
+
+#contact input {
+  height: 55px;
+}
+
+#contact form {
+  margin-top: 20px;
+}
+
+#contact .form-control {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contact input[type="submit"],
+.btn-contact-submit {
+  background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+  height: 55px;
+  width: 100%;
+  margin-top: 25px;
+  padding: 0 30px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.3);
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+#contact input[type="submit"]:hover,
+.btn-contact-submit:hover {
+  background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(6, 182, 212, 0.4);
+}
+
+#contact input[type="submit"]:active,
+.btn-contact-submit:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+}
+
+/* Efeito de brilho no botão de contato */
+#contact input[type="submit"]::before,
+.btn-contact-submit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s;
+}
+
+#contact input[type="submit"]:hover::before,
+.btn-contact-submit:hover::before {
+  left: 100%;
+}
+
+
+
+/*---------------------------------------
+   Footer section              
+-----------------------------------------*/
+footer {
+  background-attachment: fixed;
+}
+
+
+
+/* Back top */
+.go-top {
+  background-color: #7C3AED;
+  bottom: 2em;
+  right: 2em;
+  color: #ffffff;
+  font-size: 32px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.go-top:hover {
+    background: #06B6D4;
+    color: #ffffff;
+}
+
+
+/*---------------------------------------
+   Social icon             
+-----------------------------------------*/
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    color: #1F2937;
+    border-radius: 100px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.social-icon li a:hover {
+    background: #06B6D4;
+    color: #ffffff;
+}
+
+
+
+/*---------------------------------------
+   Responsive styles            
+-----------------------------------------*/
+@media (max-width: 980px) {
+
+  p {font-size: 13px;}
+
+  .custom-navbar .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .custom-navbar .nav li a {
+    font-size: 11px;
+	line-height: 20px;
+  }
+
+  #intro { height: 65vh; }
+
+  #video iframe {
+    margin-top: 42px;
+  }
+
+  #contact .contact_detail {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 2.5rem 2rem 2.5rem 2rem;
+    border-radius: 15px;
+    margin-top: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .custom-navbar .navbar-brand {
+    line-height: 20px;
+  }
+
+  #overview img,
+  #detail .col-md-4,
+  #register form {
+    padding-top: 32px;
+  }
+
+  .nav-tabs > li > a {
+    font-size: 13px;
+  }
+
+  #program img {
+    padding-bottom: 32px;
+  }
+
+  #sponsors img {
+    padding-top: 22px;
+  }
+
+  #contact .contact_detail {
+    margin-top: 30px;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+  }
+
+  #contact form {
+    margin-top: 15px;
+  }
+
+  #contact .form-control {
+    margin-bottom: 15px;
+  }
+
+  /* Responsive button adjustments */
+  #intro .btn {
+    padding: 15px 25px;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .btn-register-cta,
+  #register input[type="submit"] {
+    font-size: 14px;
+    height: 55px;
+    padding: 0 20px;
+  }
+
+  #contact input[type="submit"],
+  .btn-contact-submit {
+    font-size: 13px;
+    height: 50px;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  #intro {
+    height: 100vh;
+  }
+
+}
+
+
+/*---------------------------------------
+   Inova Summit 2025 Custom Colors             
+-----------------------------------------*/
+.text-primary {
+  color: #2563EB !important;
+}
+
+.text-secondary {
+  color: #7C3AED !important;
+}
+
+.text-accent {
+  color: #06B6D4 !important;
+}
+
+.bg-primary {
+  background-color: #2563EB !important;
+}
+
+.bg-secondary {
+  background-color: #7C3AED !important;
+}
+
+.bg-accent {
+  background-color: #06B6D4 !important;
+}
+
+.bg-light-gray {
+  background-color: #F3F4F6 !important;
+}
+
+.bg-dark-gray {
+  background-color: #1F2937 !important;
+}
+
+/* Hover effects for interactive elements */
+.hover-primary:hover {
+  color: #2563EB !important;
+  transition: all 0.3s ease;
+}
+
+.hover-secondary:hover {
+  color: #7C3AED !important;
+  transition: all 0.3s ease;
+}
+
+.hover-accent:hover {
+  color: #06B6D4 !important;
+  transition: all 0.3s ease;
+}
+
+/* Gradient backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%) !important;
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%) !important;
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%) !important;
+}
+
